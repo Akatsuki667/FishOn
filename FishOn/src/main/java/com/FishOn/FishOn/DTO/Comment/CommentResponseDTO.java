@@ -6,7 +6,7 @@ import java.util.UUID;
 public class CommentResponseDTO {
 
     private UUID id;
-    private String comment;
+    private String content;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
     private String userName;
@@ -16,9 +16,9 @@ public class CommentResponseDTO {
     public CommentResponseDTO() {}
 
     // Constructeur avec paramètres
-    public CommentResponseDTO(UUID id, String comment, LocalDateTime createdAt, LocalDateTime updatedAt, String userName, String postTitle  ) {
+    public CommentResponseDTO(UUID id, String content, LocalDateTime createdAt, LocalDateTime updatedAt, String userName, String postTitle  ) {
         this.id = id;
-        this.comment = comment;
+        this.content = content;
         this.createdAt = createdAt;
         this.updatedAt = updatedAt;
         this.userName = userName;
@@ -29,8 +29,8 @@ public class CommentResponseDTO {
     public UUID getId() {
         return id;
     }
-    public String getComment() {
-        return comment;
+    public String getContent() {
+        return content;
     }
     public LocalDateTime getCreatedAt() {
         return createdAt;
@@ -49,8 +49,8 @@ public class CommentResponseDTO {
     public void setId(UUID id) {
         this.id = id;
     }
-    public void setComment(String comment) {
-        this.comment = comment;
+    public void setContent(String content) {
+        this.content = content;
     }
     public void setCreatedAt(LocalDateTime createdAt) {
         this.createdAt = createdAt;
